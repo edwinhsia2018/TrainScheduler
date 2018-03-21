@@ -7,6 +7,7 @@
     <title>Train Scheduler</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -58,22 +59,22 @@
                       <!-- Entry Form -->
                       <form>
                         <div class="form-group mx-auto px-3">
-                          <label for="employee-name-input">Add Train</label>
+                          <label for="train-name-input">Add Train</label>
                           <input class="form-control" id="trainname-input" type="text">
                         </div>
                         <div class="form-group px-3">
-                          <label for="role-input">Destination</label>
+                          <label for="destiation-input">Destination</label>
                           <input class="form-control" id="destination-input" type="text">
                         </div>
                         <div class="form-group px-3">
-                          <label for="start-input">First Train Time (HH:mm - military time)</label>
+                          <label for="first-train-input">First Train Time (HH:mm - military time)</label>
                           <input class="form-control" id="firsttrain-input" type="text">
                         </div>
                         <div class="form-group px-3">
-                          <label for="rate-input">Frequency (min)</label>
+                          <label for="frequency-input">Frequency (min)</label>
                           <input class="form-control" id="frequency-input" type="text">
                         </div>
-                        <button class="btn btn-primary m-3" id="add-employee-btn" type="submit">Submit</button>
+                        <button class="btn btn-primary m-3 bg-info" id="add-train-btn" type="submit">Submit</button>
                       </form>
                     </div>
                   </div>
